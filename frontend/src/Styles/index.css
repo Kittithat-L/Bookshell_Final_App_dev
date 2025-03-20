@@ -1,0 +1,9 @@
+@import "tailwindcss";
+html {
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image:url('../Assests/background.png');
+    position: relative;
+    opacity: 0.95;
+}
