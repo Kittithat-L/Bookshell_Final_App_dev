@@ -22,6 +22,7 @@ const Loginform = () => {
   .then(response=>{
     console.log('Login Successfully ' , response.data);
     localStorage.setItem('token' , response.data.token);
+    localStorage.setItem('userId', response.data.userId);
     navigate('/');
   })
   .catch(error =>{
