@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background-color: #4e4542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* ---------------- */
+  /* Sidebar (เมนูด้านซ้าย) */
+  /* ---------------- */
+  .sidebar {
+    min-width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 3px solid black;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  /* ปุ่มเมนู */
+  .nav-btn,
+  .shelf-btn,
+  .account-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #ffcbbf;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-btn:hover,
+  .shelf-btn:hover,
+  .account-btn:hover {
+    background-color: #ffcbbf;
+  }
+  
+  .shelves {
+    margin-top: 20px;
+  }
+  
+  .account-section {
+    margin-top: auto;
+  }
+  
+  /* ---------------- */
+  /* Content Area (ด้านขวา) */
+  /* ---------------- */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-image: url("imagebook.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    background: #ffcbbf;
+    border-radius: 30px;
+    padding: 5px;
+    align-items: center;
+    border: 2px solid black;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 1.2em;
+    outline: none;
+  }
+  
+  .search-bar button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  
+  /* พื้นที่แสดงผล */
+  .display-area {
+    flex: 1;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 2px solid black;
+  }
+  
