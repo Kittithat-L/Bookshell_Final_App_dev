@@ -58,7 +58,7 @@ router.post('/login', async (req, res , next) => {
         }
         const { password: userPassword, ...userWithoutPassword } = existingUser.toObject();
         const token = jwt.sign({ id: existingUser._id }, secret, { expiresIn: '1d' });
-        res.status(200).json({result : userWithoutPassword , token});
+        res.status(200).json({result : userWithoutPassword , token , userId: existingUser._id});
     }catch(e){
         next(e);
     }

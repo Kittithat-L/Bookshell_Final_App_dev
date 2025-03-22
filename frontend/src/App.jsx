@@ -6,7 +6,6 @@ import Logo from './Components/Logo.jsx';
 import Protectroute from './Components/Protectroute.jsx';
 import { Registerform } from './Components/Registerform.jsx';
 
-
 const App = () => {
   return (
       <BrowserRouter>
