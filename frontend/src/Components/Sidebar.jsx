@@ -5,7 +5,6 @@ import { FaUserCircle } from "react-icons/fa";
 import { IoIosHelpCircle } from "react-icons/io";
 import { MdFeedback } from "react-icons/md";
 import { FaHouseUser } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
 
 const Sidebar = ({ handleLogout }) => {
     const navigate = useNavigate();
