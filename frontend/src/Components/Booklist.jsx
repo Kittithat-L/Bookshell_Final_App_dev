@@ -14,7 +14,7 @@ const BookList = ({ books, bookClick, userId: propUserId }) => {
             return;
         }
         fetchFavorites();
-    }, [userId]);
+    }, [setUserId, userId]);
 
     const toggleFavorite = async (book) => {
         try {

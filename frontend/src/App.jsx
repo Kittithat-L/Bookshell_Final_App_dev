@@ -5,6 +5,8 @@ import HomePage from './Components/Homepage';
 import Logo from './Components/Logo.jsx';
 import Protectroute from './Components/Protectroute.jsx';
 import { Registerform } from './Components/Registerform.jsx';
+import Myfavorites from './Components/Myfavorites.jsx';
+import Search from './Components/Search.jsx';
 
 const App = () => {
   return (
@@ -16,7 +18,17 @@ const App = () => {
               </Protectroute>
               }/>
             
+            <Route path='/myfavorites' element={
+              <Protectroute>
+                <Myfavorites />
+              </Protectroute>
+              }/>
             
+            <Route path='/search' element={
+              <Protectroute>
+                <Search />
+              </Protectroute>
+              }/>
             
             <Route path='/Login' element={
                 <div className=''>
