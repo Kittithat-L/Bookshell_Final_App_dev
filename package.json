@@ -1,0 +1,12 @@
+{
+    "name": "my-project",
+    "scripts": {
+      "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run start --prefix backend\"",
+      "build": "npm run build --prefix frontend",
+      "start": "node backend/server.js"
+    },
+    "dependencies": {
+      "concurrently": "^7.0.0"
+    }
+  }
+  
