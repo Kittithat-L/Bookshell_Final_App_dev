@@ -23,7 +23,12 @@ const userSchema = new mongoose.Schema({
         required: true,
         match: [/^\+?\d{1,3}[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/, 'Please enter a valid phone number']
     },
-    img: { type: String, default: '' }
+    img: { type: String, default: '' },
+    resetToken:{
+        type : String,
+        default : ""
+    },
+    resetTokenExpire: { type: Date }
 } , {timestamps : true});
 
 userSchema.method.toJson = function(){

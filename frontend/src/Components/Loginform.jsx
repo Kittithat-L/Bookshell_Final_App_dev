@@ -33,6 +33,9 @@ const Loginform = () => {
 const gotoRegister = () => {
   navigate('/register');
 }
+const gotoForget = () => {
+  navigate('/Forget');
+}
 
   return (
     <div className=' container justify-center flex min-h-[90vh] items-center min-w-screen'>
@@ -52,7 +55,7 @@ const gotoRegister = () => {
             <div className=' text-center pt-3'>
               <button type="submit" className='bg-[#BCD3F9] text-2xl rounded-md h-10 w-25 hover:bg-[#97acf0]'>Sign In</button>
             </div>
-            <p className=' cursor-pointer hover:underline'>Forgot Username / Password?</p>
+            <p className=' cursor-pointer hover:underline' onClick={gotoForget}>Forgot Username / Password?</p>
           </form>
         </div>
       </div>
