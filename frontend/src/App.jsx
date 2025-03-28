@@ -7,6 +7,7 @@ import Protectroute from './Components/Protectroute.jsx';
 import { Registerform } from './Components/Registerform.jsx';
 import Myfavorites from './Components/Myfavorites.jsx';
 import Search from './Components/Search.jsx';
+import MyAccount from './Components/MyAccount.jsx';
 
 const App = () => {
   return (
@@ -27,6 +28,12 @@ const App = () => {
             <Route path='/search' element={
               <Protectroute>
                 <Search />
+              </Protectroute>
+              }/>
+
+            <Route path='/myaccount' element={
+              <Protectroute>
+                <MyAccount />
               </Protectroute>
               }/>
             

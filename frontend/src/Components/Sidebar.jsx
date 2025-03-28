@@ -20,6 +20,9 @@ const Sidebar = ({ handleLogout }) => {
     const search =()=>{
         navigate('/search');
     }
+    const myAccount =()=>{
+        navigate('/myaccount');
+    }
 
     return (
         <aside className=" text-black min-w-[250px] px-[20px] py-[20px] flex flex-col justify-between">
@@ -33,7 +36,7 @@ const Sidebar = ({ handleLogout }) => {
                 <button className="w-[100%] p-[12px] my-[10px] border-[2px] rounded-[20px] bg-[#ffcbbf] cursor-pointer font-[1em] flex items-center justify-center" onClick={myfavorites}>MY FAVORITES</button>
             </div>
             <div className="mt-auto pt-20">
-                <button className="w-[100%] p-[12px] my-[10px] border-[2px] rounded-[20px] bg-[#ffcbbf] cursor-pointer font-[1em] flex items-center justify-center"><FaUserCircle className='mx-2 text-xl' /> My account</button>
+                <button className="w-[100%] p-[12px] my-[10px] border-[2px] rounded-[20px] bg-[#ffcbbf] cursor-pointer font-[1em] flex items-center justify-center" onClick={myAccount}><FaUserCircle className='mx-2 text-xl' /> My account</button>
                 <button className="w-[100%] p-[12px] my-[10px] border-[2px] rounded-[20px] bg-[#ffcbbf] cursor-pointer font-[1em] flex items-center justify-center" onClick={handleLogout}> <IoIosExit className='mx-2 text-xl' /> Logout</button>
                 <button className="w-[100%] p-[12px] my-[10px] border-[2px] rounded-[20px] bg-[#ffcbbf] cursor-pointer font-[1em] flex items-center justify-center"><IoIosHelpCircle className='mx-2 text-xl' /> Help</button>
                 <button className="w-[100%] p-[12px] my-[10px] border-[2px] rounded-[20px] bg-[#ffcbbf] cursor-pointer font-[1em] flex items-center justify-center"><MdFeedback className='mx-2 text-xl' /> Feedback</button>

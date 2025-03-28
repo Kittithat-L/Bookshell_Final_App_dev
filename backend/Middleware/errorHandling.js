@@ -1,9 +1,10 @@
 const errorHandling = (err, req, res, next) => {
-    console.log('Error Stack: ',err.Stack);
+    console.error('Error Stack:', err.stack); // log error stack
     res.status(500).json({
         success: false,
-        message: 'Internal server error',
-        error: process.env.NODE_ENV === 'Development' ? err.message : 'Something went wrong'
+        message: 'Something went wrong',
+        error: err.message || 'Unknown error'
     });
 };
+
 module.exports = errorHandling;
