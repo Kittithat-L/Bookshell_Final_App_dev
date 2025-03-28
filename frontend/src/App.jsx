@@ -8,6 +8,8 @@ import { Registerform } from './Components/Registerform.jsx';
 import Myfavorites from './Components/Myfavorites.jsx';
 import Search from './Components/Search.jsx';
 import MyAccount from './Components/MyAccount.jsx';
+import Forget from './Components/Forget.jsx'
+import Feedback from './Components/Feedback.jsx'
 
 const App = () => {
   return (
@@ -22,6 +24,11 @@ const App = () => {
             <Route path='/myfavorites' element={
               <Protectroute>
                 <Myfavorites />
+              </Protectroute>
+              }/>
+            <Route path='/feedback' element={
+              <Protectroute>
+                <Feedback />
               </Protectroute>
               }/>
             
@@ -52,6 +59,15 @@ const App = () => {
                 <div className=' absolute'>
                 <Logo />
                 <Registerform />
+                </div>
+              </div>
+            }>
+            </Route>
+            <Route path='/Forget' element={
+              <div className=''>
+                <div className=' absolute'>
+                <Logo />
+                <Forget />
                 </div>
               </div>
             }>
