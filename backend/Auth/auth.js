@@ -34,6 +34,8 @@ router.post('/register', upload.single('file') ,async (req, res, next) => {
             password: hashedPassword,
             telephone,
             img: img,
+            resetToken: "",
+            resetTokenExpire: ""
         });
         await newUser.save();
         res.status(201).json({ message: 'User created successfully' });

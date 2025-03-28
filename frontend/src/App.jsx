@@ -10,6 +10,7 @@ import Search from './Components/Search.jsx';
 import MyAccount from './Components/MyAccount.jsx';
 import Forget from './Components/Forget.jsx'
 import Feedback from './Components/Feedback.jsx'
+import ResetPassword from './Components/ResetPassword.jsx';
 
 const App = () => {
   return (
@@ -68,6 +69,15 @@ const App = () => {
                 <div className=' absolute'>
                 <Logo />
                 <Forget />
+                </div>
+              </div>
+            }>
+            </Route>
+            <Route path='/reset-password/:token' element={
+              <div className=''>
+                <div className=' absolute'>
+                <Logo />
+                <ResetPassword />
                 </div>
               </div>
             }>

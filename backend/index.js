@@ -10,6 +10,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const updateprofile = require('./Auth/updateprofile')
+const forget = require('./API/forget');
+const Feedback = require('./API/feedback');
 
 const PORT = process.env.PORT;
 
@@ -56,5 +58,7 @@ app.use('/assets', express.static(path.join(__dirname, 'Profile'), {
 app.use('/api/auth', auth);
 app.use('/api/favorite', favorite);
 app.use('/api/auth' , updateprofile);
+app.use('/api', forget);
+app.use('/api/feedback' , Feedback);
 
 app.use(errorHandling);
